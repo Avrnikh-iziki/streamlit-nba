@@ -4,10 +4,10 @@ import base64
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-
-
+from PIL import Image
+imag = Image.open('fa.png')
+st.set_page_config(page_title="Avrnikh", page_icon=imag)
 st.title('NFL Football Stats (Rushing) Explorer')
-
 st.markdown("""
 This app performs simple webscraping of NFL Football player stats data (focusing on Rushing)!
 * **Python libraries:** base64, pandas, streamlit, numpy, matplotlib, seaborn
